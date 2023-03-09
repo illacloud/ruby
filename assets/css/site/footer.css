@@ -1,0 +1,116 @@
+.footer-item ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer {
+  width: 100%;
+  padding: 120px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.footer-container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px;
+  gap: 16px;
+  flex: 0 1 auto;
+}
+.footer-item-center {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 208px;
+  color: rgba(29, 33, 41, 1);
+}
+.footer-href {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin: 0;
+  gap: 8px;
+}
+.footer-item p, .footer-href a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+.footer-href a {
+  display: block;
+  font-size: 14px;
+}
+ .footer-item-right a{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 80px 40px;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 64px;
+    flex-wrap: wrap;
+  }
+  .footer-item-left {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-item-center {
+    flex-direction: row;
+    column-gap: 0;
+    row-gap: 64px;
+  }
+  .footer-item-center .footer-item {
+    flex-basis: 50%;
+  }
+  .footer-item-right div, .footer-item-right image, .footer-item-right span {
+    display: none;
+  }
+  .footer-item-right {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-item-right .footer-href {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .footer-title {
+    font-weight: 600;
+    color: rgba(11, 12, 15, 1);
+    line-height: 40px;
+  }
+  .footer-item p {
+    color: rgba(169, 174, 184, 1);
+  }
+  .footer-href a {
+      color: rgba(120, 126, 133, 1);
+
+    }
+}
