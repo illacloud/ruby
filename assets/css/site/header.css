@@ -13,6 +13,12 @@
 .gh-head-btn {
     --multiplier: 1.3;
 }
-.gh-head-brand {
-    width: 34px;
+.gh-head-brand img {
+    transform: scale(0.6);
+}
+a:hover {
+    opacity: 1!important;
+}
+.nav li {
+    font-size: 16px;
 }
