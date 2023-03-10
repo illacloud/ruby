@@ -1,5 +1,4 @@
 (function () {
-    pagination(true);
     const share = document.querySelector('.social-media-share')
     const shareList = document.querySelector('.share-list')
     const footerListContainer = document.querySelector('.footer-container')
