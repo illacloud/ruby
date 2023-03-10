@@ -17,3 +17,10 @@
 body:not(.post-template):not(.page-template) {
     background-image: linear-gradient(0deg, #efefef 65%, #fff);
 }
+
+.basic-font-color {
+    color: rgba(29, 33, 41, 1);
+}
+.no-change-opacity:hover {
+    opacity: 1;
+}
