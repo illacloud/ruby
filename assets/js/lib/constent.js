@@ -29,10 +29,6 @@ const footerCenterContent = [
     title: 'Company',
     value: [
       {
-        name: 'Careers',
-        url: 'https://www.illacloud.com/hire'
-      },
-      {
         name: 'Media Kit',
         url: 'https://illa-cloud-storage.illacloud.com/system-assets/media-kit/illa_media_kit.20230228.zip',
         downloadName: 'illa_media_kit'
