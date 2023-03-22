@@ -32,9 +32,7 @@
         } else {
             socialMedia.style.display = 'none'
         }
-        
     }
-    
     share &&  share.addEventListener('click', (event) => {
         shareList.style.display = 'block'
         event.stopPropagation()
@@ -83,4 +81,5 @@
     const context = { footerRightContent, footerCenterContent }
     const footerTemplate = template(context);
     footerListContainer.innerHTML += footerTemplate;
+    pagination(true);
 })();
