@@ -66,7 +66,7 @@
             <ul class="footer-href">
             {{#value}}
             <li>
-                <a class="no-change-opacity" href="{{url}}" target="__blank">  
+                <a class="no-change-opacity" href="{{url}}" target="__blank">
                     {{{icon}}}
                     <span>{{name}}</span>
                 </a>
