@@ -32,9 +32,7 @@
         } else {
             socialMedia.style.display = 'none'
         }
-        
     }
-    
     share &&  share.addEventListener('click', (event) => {
         shareList.style.display = 'block'
         event.stopPropagation()
@@ -68,7 +66,7 @@
             <ul class="footer-href">
             {{#value}}
             <li>
-                <a class="no-change-opacity" href="{{url}}" target="__blank">  
+                <a class="no-change-opacity" href="{{url}}" target="__blank">
                     {{{icon}}}
                     <span>{{name}}</span>
                 </a>
@@ -83,4 +81,5 @@
     const context = { footerRightContent, footerCenterContent }
     const footerTemplate = template(context);
     footerListContainer.innerHTML += footerTemplate;
+    pagination(true);
 })();

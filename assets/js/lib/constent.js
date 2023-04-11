@@ -29,14 +29,22 @@ const footerCenterContent = [
     title: 'Company',
     value: [
       {
-        name: 'Careers',
-        url: 'https://www.illacloud.com/hire'
-      },
-      {
         name: 'Media Kit',
         url: 'https://illa-cloud-storage.illacloud.com/system-assets/media-kit/illa_media_kit.20230228.zip',
         downloadName: 'illa_media_kit'
-      }
+      },
+      {
+        name: 'Status',
+        url: 'https://status.illacloud.com/'
+      },
+      {
+        name: 'Privacy policy',
+        url: 'https://cloud.illacloud.com/privacy-policy?lng=en-US'
+      },
+      {
+        name: 'Terms of service',
+        url: 'https://cloud.illacloud.com/terms-and-conditions?lng=en-US'
+      },
     ]
   },
 ]
