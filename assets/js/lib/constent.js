@@ -3,39 +3,55 @@ const footerCenterContent = [
     title: 'Produce',
     value: [
       {
+        name: 'Integrations',
+        url: 'https://www.illacloud.com/integrations',
+      },
+      {
+        name: 'Components',
+        url: 'https://www.illacloud.com/components',
+      },
+      {
         name: 'ILLA Builder',
         url: 'https://github.com/illacloud/illa-builder'
       },
       {
         name: 'ILLA Design',
         url: 'https://github.com/illacloud/illa-design'
-      }
+      },
+      {
+        name: 'Changelog',
+        url: 'https://github.com/illacloud/illa-builder/releases'
+      },
+      {
+        name: 'Roadmap',
+        url: 'https://github.com/orgs/illacloud/projects/4'
+      },
     ]
   },
   {
     title: 'Resources',
     value: [
       {
-        name: 'MySQL',
-        url: 'https://www.mysql.com/'
+        name: 'Blog',
+        url: 'https://blog.illacloud.com/'
       },
       {
-        name: 'Rest API',
-        url: 'https://restfulapi.net/'
-      }
+        name: 'Documentation',
+        url: 'https://www.illacloud.com/docs/about-illa'
+      },
     ]
   },
   {
     title: 'Company',
     value: [
       {
+        name: 'About us',
+        url: 'https://www.illacloud.com/docs/about-illa'
+      },
+      {
         name: 'Media Kit',
         url: 'https://illa-cloud-storage.illacloud.com/system-assets/media-kit/illa_media_kit.20230228.zip',
         downloadName: 'illa_media_kit'
-      },
-      {
-        name: 'Status',
-        url: 'https://status.illacloud.com/'
       },
       {
         name: 'Privacy policy',
@@ -44,6 +60,10 @@ const footerCenterContent = [
       {
         name: 'Terms of service',
         url: 'https://cloud.illacloud.com/terms-and-conditions?lng=en-US'
+      },
+      {
+        name: 'Status',
+        url: 'https://status.illacloud.com/'
       },
     ]
   },
@@ -88,6 +108,16 @@ const footerRightContent = {
       `,
       name: 'Product Hunt',
       url: 'https://www.producthunt.com/posts/illa'
+    },
+    {
+      icon:`<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M5.54919 7.23077V20.1556H1.25403V7.23077H5.54919Z" fill="#1D2129" />
+      <path d="M5.83184 3.23256C5.83184 4.47406 4.89982 5.46512 3.4025 5.46512H3.37388C1.93202 5.46512 1 4.47406 1 3.23256C1 1.96601 1.96064 1 3.43113 1C4.90161 1 5.80501 1.96422 5.83184 3.23256Z" fill="#1D2129" />
+      <path d="M12.1825 12.9374V20.1556H7.88909C7.88909 20.1556 7.94275 8.44365 7.88909 7.23077H12.1825V9.05903C12.7549 8.1771 13.7764 6.92487 16.0555 6.92487C18.8819 6.92487 21 8.77102 21 12.7424V20.1556H16.7048V13.2415C16.7048 11.5027 16.0841 10.3184 14.5295 10.3184C13.3417 10.3184 12.6351 11.1181 12.3256 11.8891C12.2111 12.1646 12.1825 12.551 12.1825 12.9374Z" fill="#1D2129" />
+    </svg>
+      `,
+      name: 'LinkInIcon',
+      url: 'https://www.linkedin.com/company/illacloud/'
     }
   ]
 }
