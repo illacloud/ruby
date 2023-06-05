@@ -3,6 +3,7 @@
     const shareList = document.querySelector('.share-list')
     const footerListContainer = document.querySelector('.footer-container')
     const socialMedia = document.querySelector('.social-media')
+    const toolbar = document.querySelector('.toolbar')
     const threshold = 100 // 距离底部的距离
     const  throttle = (func, delay) => {
         let timer = null;
@@ -26,11 +27,25 @@
     const handleScroll = () => {
         const {scrollTop, clientHeight, scrollHeight} = document.documentElement
         const val = scrollTop + clientHeight + threshold
-        if(!socialMedia) return
+        if(!socialMedia && !toolbar) return
         if(val < scrollHeight) {
-            socialMedia.style.display = 'flex'
+            if(toolbar) {
+                toolbar.style.display = 'flex'
+                return
+            }
+            if(socialMedia) {
+                socialMedia.style.display = 'flex'
+                return
+            }
         } else {
-            socialMedia.style.display = 'none'
+            if(toolbar) {
+                toolbar.style.display = 'none'
+                return
+            }
+            if(socialMedia) {
+                socialMedia.style.display = 'none'
+                return
+            }
         }
     }
     share &&  share.addEventListener('click', (event) => {

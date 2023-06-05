@@ -42,7 +42,7 @@
                     {{^match @custom.navigation_layout "Stacked"}}
                         <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     {{/match}}
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://cloud.illacloud.com" target="_blank" >SIGN IN</a>
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://cloud.illacloud.com" target="_blank" onclick="gtag_report_conversion()">SIGN IN</a>
             </div>
         </div>
     </header>
@@ -50,6 +50,7 @@
     <div class="site-content">
         {{{body}}}
     </div>
+    {{> "toolbar"}}
 
     <footer class="gh-foot gh-outer">
         {{> "footer"}}
