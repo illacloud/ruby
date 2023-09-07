@@ -5,7 +5,13 @@
       {{> "icons/illa"}}
       <span>Free</span>
     </div>
-    <span>Faster solutions at internal tools, dashboards, CRUD apps.</span>
+    <span>Build Your internal tools at lightning speed!</span>
   </div>
-  <a href="#">Try For Free</a>
+    {{#if post}}
+        {{#post}}
+            <a href="https://cloud.illacloud.com/?utm_source=blog&utm_medium=sign-in&utm_campaign=blog-sign-in-{{title}}" >Try For Free</a>
+        {{/post}}
+    {{else}}
+        <a href="https://cloud.illacloud.com/?utm_source=blog&utm_medium=sign-in&utm_campaign=blog-sign-in" >Try For Free</a>
+    {{/if}}
 </div>
