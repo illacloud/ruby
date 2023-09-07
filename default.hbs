@@ -17,13 +17,25 @@
         <div class="gh-head-inner gh-inner">
             <div class="gh-head-brand">
                 <div class="gh-head-brand-wrapper">
-                    <a class="gh-head-logo" href="https://www.illacloud.com/">
-                        {{#if @site.logo}}
-                            <img src="{{@site.logo}}" alt="{{@site.title}}">
-                        {{else}}
-                            {{@site.title}}
-                        {{/if}}
-                    </a>
+                    {{#if post}}
+                        {{#post}}
+                            <a class="gh-head-logo" href="https://www.illacloud.com/?utm_source=blog&utm_medium=logo&utm_campaign=blog-{{title}}">
+                                {{#if @site.logo}}
+                                    <img src="{{@site.logo}}" alt="{{@site.title}}">
+                                {{else}}
+                                    {{@site.title}}
+                                {{/if}}
+                            </a>
+                        {{/post}}
+                    {{else}}
+                        <a class="gh-head-logo" href="https://www.illacloud.com/?utm_source=blog&utm_medium=logo&utm_campaign=blog">
+                            {{#if @site.logo}}
+                                <img src="{{@site.logo}}" alt="{{@site.title}}">
+                            {{else}}
+                                {{@site.title}}
+                            {{/if}}
+                        </a>
+                    {{/if}}
                 </div>
                 <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                 <button class="gh-burger"></button>
@@ -37,16 +49,20 @@
                     {{/match}}
                 {{/unless}}
             </nav>
-
-            <div class="gh-head-actions">
+                <div class="gh-head-actions">
                     {{^match @custom.navigation_layout "Stacked"}}
                         <button class="gh-search gh-icon-btn" aria-label="Search this site" data-ghost-search>{{> "icons/search"}}</button>
                     {{/match}}
-                    <a class="gh-head-btn gh-btn gh-primary-btn" href="https://cloud.illacloud.com" target="_blank" onclick="gtag_report_conversion()">SIGN IN</a>
-            </div>
+                    {{#if post}}
+                        {{#post}}
+                            <a class="gh-head-btn gh-btn gh-primary-btn" href="https://cloud.illacloud.com/?utm_source=blog&utm_medium=sign-in&utm_campaign=blog-sign-in-{{title}}" target="_blank" onclick="gtag_report_conversion()">SIGN IN</a>
+                        {{/post}}
+                    {{else}}
+                        <a class="gh-head-btn gh-btn gh-primary-btn" href="https://cloud.illacloud.com/?utm_source=blog&utm_medium=sign-in&utm_campaign=blog-sign-in" target="_blank" onclick="gtag_report_conversion()">SIGN IN</a>
+                    {{/if}}
+                </div>
         </div>
     </header>
-
     <div class="site-content">
         {{{body}}}
     </div>
